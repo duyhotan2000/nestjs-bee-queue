@@ -1,0 +1,64 @@
+{
+  "name": "@duyhotan2000/nestjs-bee-queue",
+  "version": "1.0.0",
+  "description": "An opioninated bee queue module for Nestjs",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "vitest",
+    "test:e2e": "tsnd test/src/main.ts",
+    "build": "rimraf dist && tsc -p tsconfig.build.json",
+    "release": "npm run build && release-it"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/duyhotan2000/nestjs-bee-queue.git"
+  },
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "keywords": [
+    "nestjs",
+    "bee-queue",
+    "redis"
+  ],
+  "author": "Duy Ho",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/duyhotan2000/nestjs-bee-queue/issues"
+  },
+  "homepage": "https://github.com/duyhotan2000/nestjs-bee-queue#readme",
+  "dependencies": {
+    "redis": "3.1.2"
+  },
+  "devDependencies": {
+    "@nestjs/cli": "^9.0.0",
+    "@nestjs/common": "^9.0.0",
+    "@nestjs/core": "^9.0.0",
+    "@nestjs/platform-express": "^9.0.7",
+    "@nestjs/testing": "^9.0.7",
+    "@swc/core": "^1.2.220",
+    "@types/node": "^18.6.3",
+    "bee-queue": "^1.5.0",
+    "reflect-metadata": "^0.1.13",
+    "release-it": "^15.2.0",
+    "rimraf": "^3.0.2",
+    "rxjs": "^7.5.6",
+    "ts-node": "^10.9.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.7.4",
+    "unplugin-swc": "^1.3.2",
+    "vitest": "^0.19.1",
+    "@types/redis": "2.8.32"
+  },
+  "peerDependencies": {
+    "@nestjs/common": "^9.0.0",
+    "@nestjs/core": "^9.0.0",
+    "bee-queue": "^1.5.0",
+    "redis": "3.1.2",
+    "reflect-metadata": "^0.1.13"
+  }
+}
